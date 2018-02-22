@@ -1,6 +1,7 @@
 require 'pry'
 
 def line(current_line)
+  binding.pry
   if current_line == []
     puts "The line is currently empty."
   else
