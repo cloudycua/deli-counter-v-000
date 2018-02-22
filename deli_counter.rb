@@ -5,6 +5,7 @@ def line(current_line)
     line_order = "The line is currently:"
     current_line.each_with_index do |customer, index|
       line_order << " #{index+1}. #{customer}"
+    end
   end
 end
 
