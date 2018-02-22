@@ -4,8 +4,9 @@ def line(current_line)
   else
     puts = "The line is currently:"
     current_line.each_with_index do |customer, index|
-      puts " #{index.to_i+1}. #{customer}"
+      line_order += " #{index.to_i+1}. #{customer}"
     end
+    puts "#{line_order}"
   end
 end
 
