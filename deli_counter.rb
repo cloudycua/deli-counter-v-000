@@ -1,12 +1,12 @@
 def line(current_line)
-  if current-line.size > 0
+  if current-line.size == 0
+    puts "The line is currently empty."
+  else
     line_list = []
     katz-deli.each do |customer|
       line_list << "#{customer.index + 1}. #{customer}"
     end
     puts "The line is currently: #{line_list}."
-  else
-    puts "The line is currently empty."
   end
 end
 
