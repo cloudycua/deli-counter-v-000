@@ -1,5 +1,5 @@
 def line(current_line)
-  if current-line.size == 0
+  if current-line == []
     puts "The line is currently empty."
   else
     line_list = []
