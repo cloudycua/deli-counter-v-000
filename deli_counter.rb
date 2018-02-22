@@ -1,12 +1,12 @@
-def line(current_line)
-  if current_line == []
+def line(deli)
+  if deli.empty?
     puts "The line is currently empty."
   else
-    line_list = []
-    current_line.each_with_index do |customer, index|
-      line_list << " #{index.to_i+1}. #{customer}"
+    current_line = "The line is currently:"
+    deli.each.with_index(1) do |person, i|
+      current_line << " #{i}. #{person}"
     end
-    puts "The line is currently:#{line_list}"
+    puts current_line
   end
 end
 
