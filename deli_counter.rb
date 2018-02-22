@@ -3,7 +3,7 @@ def line(current_line)
     puts "The line is currently empty."
   else
     line_list = []
-    katz-deli.each do |customer|
+    current_line.each do |customer|
       line_list << "#{customer.index + 1}. #{customer}"
     end
     puts "The line is currently: #{line_list}."
