@@ -3,8 +3,8 @@ def line(current_line)
     puts "The line is currently empty."
   else
     line_list = "The line is currently:"
-    current_line.each_with_index do |person, i|
-      line_list << " #{i+1}. #{person}"
+    current_line.each_with_index do |name, i|
+      line_list << " #{i+1}. #{name}"
     end
     puts line_list
   end
