@@ -2,11 +2,10 @@ def line(current_line)
   if current_line == []
     puts "The line is currently empty."
   else
-    line_list = []
-    current_line.each do |customer|
-      line_list << "#{customer.index + 1}. #{customer}"
+    puts "The line is currently: "
+    current_line.each_with_index.map do |customer, index|
+      puts "#{index + 1}. #{customer}"
     end
-    puts "The line is currently: #{line_list}."
   end
 end
 
