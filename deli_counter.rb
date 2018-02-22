@@ -2,8 +2,8 @@ def line(current_line)
   if current_line == []
     puts "The line is currently empty."
   else
-    puts "The line is currently: "
-    current_line.each_with_index { |customer, index| puts "#{index+1}. #{customer} " }
+    puts "The line is currently:"
+    current_line.each_with_index { |customer, index| puts " #{index+1}. #{customer}" }
   end
 end
 
@@ -21,3 +21,4 @@ def now_serving(current_line)
     puts "There is nobody waiting to be served!"
   end
 end
+ 
