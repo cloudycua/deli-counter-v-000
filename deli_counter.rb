@@ -4,7 +4,6 @@ def line(current_line)
   else
     puts "The line is currently: "
     current_line.each_with_index {|customer, index| puts "#{index+1}. #{customer} "
-    end
   end
 end
 
