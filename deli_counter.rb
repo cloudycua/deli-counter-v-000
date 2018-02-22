@@ -16,6 +16,7 @@ def take_a_number(current_line, new_customer)
   puts "Welcome, #{new_customer}. You are number #{current_line.size} in line."
 end
 
+
 def now_serving(current_line)
   if current_line.size > 0
     puts "Currently serving #{current_line.first}."
