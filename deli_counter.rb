@@ -2,9 +2,9 @@ def line(current_line)
   if current_line == []
     puts "The line is currently empty."
   else
-    line_order = "The line is currently:"
+    puts = "The line is currently:"
     current_line.each_with_index do |customer, index|
-      line_order += " #{index.to_i+1}. #{customer}"
+      puts " #{index.to_i+1}. #{customer}"
     end
   end
 end
