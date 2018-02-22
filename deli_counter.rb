@@ -3,7 +3,7 @@ def line(current_line)
     puts "The line is currently empty."
   else
     puts "The line is currently: "
-    current_line.each_with_index.map do |customer, index|
+    current_line.each_with_index do |customer, index|
       puts "#{index + 1}. #{customer}"
     end
   end
