@@ -1,3 +1,5 @@
+require 'pry'
+
 def line(current_line)
   if current_line == []
     puts "The line is currently empty."
@@ -21,4 +23,3 @@ def now_serving(current_line)
     puts "There is nobody waiting to be served!"
   end
 end
- 
